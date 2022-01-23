@@ -27,7 +27,7 @@ playing = True
 display_word_list = list(display_word)
 index_list = []
 
-#Fucntions
+#Functions
 
 def hangman():
     print('----')
