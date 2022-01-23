@@ -12,7 +12,7 @@ word_of_the_day = soup.select_one('.otd-item-headword__word')
 date = soup.select_one('.otd-item-headword__date')
 current_date = re.search(strftime('%A, %B %d, %Y'), date.text)
 
-# Global Variables
+# Variables
 
 word = word_of_the_day.text.translate({ord(i): None for i in '\n'})
 word_list = list(word)
@@ -27,7 +27,7 @@ playing = True
 display_word_list = list(display_word)
 index_list = []
 
-#Functions
+# Functions
 
 def hangman():
     print('----')
@@ -183,7 +183,7 @@ def guessed_letters():
     _ = ' '.join(map(str, letters_guessed))
     print("You've guessed these letters: " + _)
 
-#logic
+# logic
 
 print("Welcome to Hangman!")
 print(f"This word is Dictionary.com's word of the day for {current_date.group()}")
